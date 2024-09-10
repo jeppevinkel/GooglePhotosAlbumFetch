@@ -1,8 +1,6 @@
 ﻿using System.Text.Json;
-using System.Text.Json.Nodes;
 using System.Text.RegularExpressions;
 using GooglePhotosAlbumFetch.Models;
-using Newtonsoft.Json.Linq;
 
 namespace GooglePhotosAlbumFetch;
 
@@ -81,7 +79,7 @@ public static class AlbumFetcher
             result.Add(new ImageInfo
             {
                 Uid = uid,
-                Url = [url],
+                Url = url,
                 Width = width,
                 Height = height,
                 ImageUpdateDate = imageUpdateDate,
