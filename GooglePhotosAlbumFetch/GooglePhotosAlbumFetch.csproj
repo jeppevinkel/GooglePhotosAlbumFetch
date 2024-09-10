@@ -8,6 +8,10 @@
         <PackageId>GooglePhotosAlbumFetch</PackageId>
         <RepositoryType>git</RepositoryType>
         <RepositoryUrl>https://github.com/jeppevinkel/GooglePhotosAlbumFetch</RepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
 </Project>
