@@ -17,8 +17,8 @@ jobs:
       - name: Set VERSION variable from tag
         run: echo "VERSION=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
       - name: Build
-        run: dotnet build --configuration Release /p:Version=${VERSION}
+        run: dotnet build ./GooglePhotosAlbumFetch --configuration Release /p:Version=${VERSION}
       - name: Pack
-        run: dotnet pack --configuration Release /p:Version=${VERSION} --no-build --output .
+        run: dotnet pack ./GooglePhotosAlbumFetch --configuration Release /p:Version=${VERSION} --no-build --output .
       - name: Push
         run: dotnet nuget push GooglePhotosAlbumFetch.${VERSION}.nupkg --api-key ${{ secrets.NUGET_KEY }}
