@@ -16,7 +16,7 @@ foreach(ImageInfo image in images)
 
 ## Structure
 
-```json
+```
 {
     Uid: string
     Url: string
