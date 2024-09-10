@@ -27,3 +27,7 @@ foreach(ImageInfo image in images)
     AlbumAddDate: long
 }
 ```
+
+## Credits
+
+This package is heavily inspired by https://www.npmjs.com/package/google-photos-album-image-url-fetch
